@@ -4,7 +4,34 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
-import emojiList from "./emojiList";
+
+const emojiList = [
+  "😇",
+  "💩",
+  "🇳🇿",
+  "❤️",
+  "🥺",
+  "✨",
+  "🎄",
+  "🔥",
+  "🥰",
+  "😂",
+  "🥲",
+  "😊",
+  "🥶",
+  "🤨",
+  "😇",
+  "👀",
+  "👁",
+  "🍕",
+  "🍖",
+  "🍟",
+  "🍤",
+  "🏉",
+  "🚾",
+  "🍪",
+  "🌏",
+];
 
 function ImageLink({ children, href }) {
   return (
