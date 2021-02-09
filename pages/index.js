@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
 
@@ -62,15 +61,7 @@ export default function Home() {
       <section className={styles.section}>
         <main>
           <div className={styles.titleContainer}>
-            <div className={styles.profilePictureContainer}>
-              <Image
-                src="/images/profile.png"
-                alt="Profile photo of Francis"
-                width="100%"
-                height="100%"
-                className="profile-picture"
-              />
-            </div>
+            <img src="/images/profile.png" alt="Profile photo of Francis" />
             <h1 className={styles.title}>Francis Auwerda</h1>
           </div>
           <p className={styles.description}>

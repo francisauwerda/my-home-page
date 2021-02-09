@@ -31,18 +31,6 @@
   padding-bottom: 20px;
 }
 
-.profilePicture {
-  margin-right: 50px;
-  border-radius: 50%;
-}
-
-@media only screen and (max-width: 900px) {
-  .profilePictureContainer {
-    width: 75px;
-    height: 75px;
-  }
-}
-
 .title {
   font-size: 48px;
   font-weight: bold;

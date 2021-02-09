@@ -12,10 +12,6 @@ body {
   user-select: none;
 }
 
-.profile-picture {
-  border-radius: 50%;
-}
-
 .emoji {
   margin: 50px 0;
   font-size: 30px;
