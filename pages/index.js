@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
+import emojiList from "./emojiList";
 
 function ImageLink({ children, href }) {
   return (
@@ -15,6 +17,9 @@ function ImageLink({ children, href }) {
 }
 
 export default function Home() {
+  const [emojis, setEmojis] = useState(["🍕"]);
+  const [beginAnimation, setBeginAnimation] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -44,7 +49,7 @@ export default function Home() {
           <p className={styles.description}>
             Hello and welcome 👋
             <br />
-            Click on the links if you would like to reach me
+            Click on the links if you'd like to reach me.
           </p>
         </main>
 
@@ -62,7 +67,28 @@ export default function Home() {
         </aside>
       </section>
 
-      {/* <article className={styles.article}>✌️</article> */}
+      <article
+        className={styles.article}
+        onClick={() => {
+          const newEmoji =
+            emojiList[Math.floor(Math.random() * Math.floor(emojiList.length))];
+          setEmojis([...emojis, newEmoji]);
+        }}
+      >
+        <div className="emoji-container">
+          {emojis.map((emoji, index) => {
+            return (
+              <span
+                key={`${emoji}-${index}`}
+                className={beginAnimation ? "emoji" : "emoji-still"}
+                onClick={() => setBeginAnimation(true)}
+              >
+                {emoji}
+              </span>
+            );
+          })}
+        </div>
+      </article>
     </div>
   );
 }

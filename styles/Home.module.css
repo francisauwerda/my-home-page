@@ -2,7 +2,6 @@
   min-height: 100vh;
   padding: 80px 100px;
   display: grid;
-  grid-template-rows: 50% 50%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -140,11 +139,12 @@
 
 /* Bottom part */
 .article {
-  background-color: #5c5c5c;
+  background-color: #3c3c3c;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 160px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -153,6 +153,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
   }
 }
