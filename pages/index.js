@@ -1,36 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
 
-const emojiList = [
-  "😇",
-  "💩",
-  "🇳🇿",
-  "❤️",
-  "🥺",
-  "✨",
-  "🎄",
-  "🔥",
-  "🥰",
-  "😂",
-  "🥲",
-  "😊",
-  "🥶",
-  "🤨",
-  "😇",
-  "👀",
-  "👁",
-  "🍕",
-  "🍖",
-  "🍟",
-  "🍤",
-  "🏉",
-  "🚾",
-  "🍪",
-  "🌏",
-];
+// const emojiList = [
+//   "😇",
+//   "💩",
+//   "🇳🇿",
+//   "❤️",
+//   "🥺",
+//   "✨",
+//   "🎄",
+//   "🔥",
+//   "🥰",
+//   "😂",
+//   "🥲",
+//   "😊",
+//   "🥶",
+//   "🤨",
+//   "😇",
+//   "👀",
+//   "👁",
+//   "🍕",
+//   "🍖",
+//   "🍟",
+//   "🍤",
+//   "🏉",
+//   "🚾",
+//   "🍪",
+//   "🌏",
+// ];
 
 function ImageLink({ children, href }) {
   return (
@@ -43,8 +43,8 @@ function ImageLink({ children, href }) {
 }
 
 export default function Home() {
-  const [emojis, setEmojis] = useState(["🍕"]);
-  const [beginAnimation, setBeginAnimation] = useState(false);
+  // const [emojis, setEmojis] = useState(["🍕"]);
+  // const [beginAnimation, setBeginAnimation] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -85,7 +85,7 @@ export default function Home() {
         </aside>
       </section>
 
-      <article
+      {/* <article
         className={styles.article}
         onClick={() => {
           const newEmoji =
@@ -106,7 +106,7 @@ export default function Home() {
             );
           })}
         </div>
-      </article>
+      </article> */}
     </div>
   );
 }
